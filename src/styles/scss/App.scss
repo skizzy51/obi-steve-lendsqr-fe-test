@@ -1,0 +1,101 @@
+@import "./mixins";
+@import "./variables";
+
+.Topnav {
+    background-color: white;
+    @include alignCenterWithoutJustifyContent;
+    padding: 30px;
+
+    .sidenav-btn {
+        display: none;
+    }
+    .logo {
+        flex: 0.3;
+        & img {
+            width: clamp(70px, 9vw, 144px);
+        }
+    }
+    .search-cont {
+        flex: 1;
+        .search {
+            display: flex;
+            align-self: center;
+            height: 40px;
+            width: fit-content;
+
+            & input {
+                border: 1px solid rgba(33, 63, 125, 0.2);
+                width: clamp(250px, 25vw, 400px);
+                padding-left: 20px;
+            }
+            .search-btn {
+                cursor: pointer;
+                background-color: $defaultBlueColor;
+                color: white;
+                width: 56px;
+                @include justify-content(center);
+                &:hover {
+                    background-color: $defaultColorHover;
+                    transition: $backgroundColorTransition;
+                }
+            }
+        }
+    }
+    .user-info {
+        flex: 0.3;
+        @include justify-content(space-between);
+        gap: 0 5px;
+
+        & p {
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: 400;
+            font-size: clamp(10px, 1.1vw, 16px);
+        }
+        .fa-bell {
+            font-size: clamp(10px, 1.1vw, 16px);
+        }
+        & img {
+            width: clamp(30px, 3vw, 48px);
+        }
+        & div {
+            cursor: pointer;
+            gap: 0 5px;
+            @include justify-content(space-between);
+            font-size: clamp(10px, 1.1vw, 16px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Topnav {
+        padding: 20px 5px;
+        flex-wrap: wrap;
+
+        .sidenav-btn {
+            display: block;
+            .btn {
+                height: 25px;
+            }
+        }
+        .logo {
+            flex: unset;
+            margin: 0 auto;
+        }
+        .search-cont {
+            flex: unset;
+            width: 100%;
+            margin-top: 10px;
+            .search {
+                width: 100%;
+                justify-content: center;
+                & input {
+                    width: 80%;
+                }
+            }
+        }
+        .user-info {
+            display: none;
+        }
+    }
+}

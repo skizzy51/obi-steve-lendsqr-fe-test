@@ -1,0 +1,103 @@
+.Topnav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.Topnav .sidenav-btn {
+  display: none;
+}
+.Topnav .logo {
+  flex: 0.3;
+}
+.Topnav .logo img {
+  width: clamp(70px, 9vw, 144px);
+}
+.Topnav .search-cont {
+  flex: 1;
+}
+.Topnav .search-cont .search {
+  display: flex;
+  align-self: center;
+  height: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Topnav .search-cont .search input {
+  border: 1px solid rgba(33, 63, 125, 0.2);
+  width: clamp(250px, 25vw, 400px);
+  padding-left: 20px;
+}
+.Topnav .search-cont .search .search-btn {
+  cursor: pointer;
+  background-color: #39cdcc;
+  color: white;
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Topnav .search-cont .search .search-btn:hover {
+  background-color: #309292;
+  transition: background-color 0.3s ease-in-out;
+}
+.Topnav .user-info {
+  flex: 0.3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 5px;
+}
+.Topnav .user-info p {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: clamp(10px, 1.1vw, 16px);
+}
+.Topnav .user-info .fa-bell {
+  font-size: clamp(10px, 1.1vw, 16px);
+}
+.Topnav .user-info img {
+  width: clamp(30px, 3vw, 48px);
+}
+.Topnav .user-info div {
+  cursor: pointer;
+  gap: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(10px, 1.1vw, 16px);
+}
+
+@media (max-width: 768px) {
+  .Topnav {
+    padding: 20px 5px;
+    flex-wrap: wrap;
+  }
+  .Topnav .sidenav-btn {
+    display: block;
+  }
+  .Topnav .sidenav-btn .btn {
+    height: 25px;
+  }
+  .Topnav .logo {
+    flex: unset;
+    margin: 0 auto;
+  }
+  .Topnav .search-cont {
+    flex: unset;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .Topnav .search-cont .search {
+    width: 100%;
+    justify-content: center;
+  }
+  .Topnav .search-cont .search input {
+    width: 80%;
+  }
+  .Topnav .user-info {
+    display: none;
+  }
+}/*# sourceMappingURL=App.css.map */

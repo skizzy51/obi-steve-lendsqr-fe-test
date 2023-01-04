@@ -1,0 +1,149 @@
+.LoginPage {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.LoginPage .section1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.LoginPage .section1 .logo {
+  margin-top: 106px;
+  margin-left: 97px;
+}
+.LoginPage .section1 .content {
+  margin: auto;
+  margin-top: 139px;
+}
+.LoginPage .section1 .content img {
+  width: 550px;
+}
+.LoginPage .section2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LoginPage .section2 .content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.LoginPage .section2 .content img {
+  display: none;
+}
+.LoginPage .section2 .content h1 {
+  color: #213f7d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: -0.04em;
+}
+.LoginPage .section2 .content h4 {
+  color: #545f7d;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.LoginPage .section2 .content .email {
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  border-radius: 5px;
+  margin-top: 60px;
+  height: 50px;
+  padding-left: 16px;
+}
+.LoginPage .section2 .content .password {
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  border-radius: 5px;
+  margin-top: 24px;
+  height: 50px;
+  padding-left: 16px;
+}
+.LoginPage .section2 .content span {
+  margin-top: 24px;
+  color: #39cdcc;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.LoginPage .section2 .content span:hover {
+  text-decoration: underline;
+}
+.LoginPage .section2 .content button {
+  cursor: pointer;
+  background-color: #39cdcc;
+  border-radius: 8px;
+  height: 48px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.LoginPage .section2 .content button:hover {
+  background-color: #309292;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .LoginPage .section1 {
+    width: 35%;
+  }
+  .LoginPage .section1 .logo {
+    margin-left: 2vw;
+  }
+  .LoginPage .section1 .logo img {
+    width: 20vw;
+  }
+  .LoginPage .section1 .content img {
+    width: 40vw;
+  }
+  .LoginPage .section2 {
+    width: 65%;
+  }
+  .LoginPage .section2 .content {
+    width: 80%;
+  }
+}
+@media (max-width: 769px) {
+  .LoginPage .section1 {
+    width: 20%;
+  }
+  .LoginPage .section1 .logo img {
+    width: 15vw;
+  }
+  .LoginPage .section1 .content img {
+    display: none;
+  }
+  .LoginPage .section2 {
+    width: 80%;
+  }
+  .LoginPage .section2 .content {
+    width: 90%;
+  }
+}
+@media (max-width: 426px) {
+  .LoginPage .section1 {
+    display: none;
+  }
+  .LoginPage .section2 {
+    width: 100%;
+  }
+  .LoginPage .section2 .content {
+    width: 90%;
+  }
+  .LoginPage .section2 .content img {
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 5vh;
+    display: block;
+  }
+}/*# sourceMappingURL=Login.css.map */
