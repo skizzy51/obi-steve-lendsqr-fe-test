@@ -5,6 +5,10 @@ It pulls the users' details from the API provided
 Dependencies in this application include redux toolkit, react-router-dom, SCSS
 Font awesome was also used for the icons displayed on the figma design
 
+## Project website
+
+https://obi-steve-lendsqr-fe-test.vercel.app/
+
 ## PAGES
 
 ## Login Page
